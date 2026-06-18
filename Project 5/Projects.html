@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="Projects-styles.css" >
+  </head>
+  <body>
+    <header>
+      <nav>
+    <div class="logo">Pranav Tiwari<br>Web Developer's Portfolio</div>
+      My Projects
+    </div>
+    <input type="text" placeholder="Search...">
+  </nav>
+    </header>
+
+    <main class="container">
+      <h1>Retractable Mid-Platform Railway Crossing System with Multi-Sensor Train Detection</h1>
+      <p class="subtitle">Invention Disclosure Form</p>
+      <figure class="hero">
+        <img src="./images/Protototype base model.png" target="_blank" alt="Model of railway platform with retractable crossing" />
+        <!--<figcaption>Prototype model — save the supplied image as images/station.jpg</figcaption>-->
+      </figure>
+
+      <section>
+        <h2>Abstract</h2>
+        <p>
+          This project presents a Retractable Mid-Platform Railway Crossing System designed to
+          enhance accessibility and reduce unsafe track trespassing. The system uses an
+          Arduino-controlled ultrasonic sensor to monitor train proximity and servo-driven
+          actuators to extend or retract a sliding deck. Piezoelectric tiles harvest energy from
+          footsteps to support low-power station utilities.
+        </p>
+      </section>
+
+      <section>
+        <h2>Keywords</h2>
+        <ul class="keywords">
+          <li>Railway safety</li>
+          <li>Retractable platform crossing</li>
+          <li>Arduino-based control system</li>
+          <li>Ultrasonic train detection sensor</li>
+          <li>Piezoelectric energy-harvesting tiles</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Present State of the Art</h2>
+        <p>
+          Typical solutions include Foot Over Bridges (FOBs), underpasses, warning alarms,
+          CCTV and platform screen doors for metro systems. These approaches face accessibility,
+          cost and trespassing challenges; mid-platform deployable crossings are not commonly used.
+        </p>
+      </section>
+
+      <section>
+        <h2>Problem Addressed & Proposed Solution</h2>
+        <p>
+          The system reduces illegal track crossing, improves access for elderly and disabled
+          passengers, and integrates renewable energy. A sliding deck deploys only when no train
+          is approaching and retracts automatically on train detection; a manual override is
+          provided for emergencies.
+        </p>
+      </section>
+
+      <section>
+        <h2>Detailed Explanation</h2>
+        <h3>Working Principle</h3>
+        <ol>
+          <li>Normal: deck retracted, barricades locked.</li>
+          <li>Safe verification: ultrasonic (or multi-sensor) checks distance.</li>
+          <li>Deployment: Arduino drives servos to extend deck; piezo tiles provide auxiliary power.</li>
+          <li>Train detection: warnings activate; deck retracts and locks.</li>
+          <li>Fail-safe: system defaults to retracted and locked during faults.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Manual Backup System</h2>
+        <p>Pinion gears, connecting chain and a rotating lever enable authorized staff manual operation.</p>
+      </section>
+
+      <section>
+        <h2>Working Examples</h2>
+        <h3>Example 1 — Normal Operation</h3>
+        <p>Sensor confirms safety, sliding deck deploys, passengers cross, train detected, deck retracts.</p>
+        <h3>Example 2 — Power Failure</h3>
+        <p>System remains locked in fail-safe; staff operate manual override if required.</p>
+      </section>
+
+      <section>
+        <h2>Components</h2>
+        <table>
+          <thead>
+            <tr><th>Component</th><th>Role</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Arduino Uno</td><td>Processes sensor input</td></tr>
+            <tr><td>HC-SR04 Ultrasonic Sensor</td><td>Detects train proximity</td></tr>
+            <tr><td>Servo Motors</td><td>Controls deck movement</td></tr>
+            <tr><td>Piezoelectric Tiles</td><td>Energy harvesting from footsteps</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Claims / Aspects to Monopolize</h2>
+        <ul>
+          <li>Retractable mid-platform sliding deck</li>
+          <li>Multi-sensor train detection and interlock</li>
+          <li>Fail-safe locked architecture with manual override</li>
+          <li>Integration of piezoelectric energy-harvesting tiles</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Novelty</h2>
+        <p>
+          Preliminary search shows no known railway systems in India using deployable mid-platform
+          crossings combined with signaling interlock and energy harvesting — this combination
+          appears novel.
+        </p>
+      </section>
+
+      <section>
+        <h2>References</h2>
+        <ol>
+          <li>Indian Railways Annual Reports</li>
+          <li>Indian Patent Advanced Search System</li>
+          <li>Railway Safety and Signaling Standards</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Inventors</h2>
+        <ul>
+          <li>Pratham Mittal</li>
+          <li>Divyansh Attrish</li>
+          <li>Pranav Tiwari</li>
+          <li>Tushar Gupta</li>
+        </ul>
+      </section>
+      <section>
+        <h2>My Contributions</h2>
+        <ul>
+          <li>Idea Thinking</li>
+          <li>Deep Research</li>
+          <li>Prototype Base Model Building</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      @2025Pranav Tiwari. All Rights Reserved
+    </footer>
+  </body>
+</html>
